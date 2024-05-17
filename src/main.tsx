@@ -8,7 +8,7 @@ import { AuthProvider } from "./context/AuthContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
-		<BrowserRouter basename="b2bit-frontend">
+		<BrowserRouter>
 			<AuthProvider>
 				<Toaster
 					position="top-right"
