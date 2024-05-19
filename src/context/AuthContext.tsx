@@ -79,7 +79,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
 						{
 							headers: {
 								Accept: "application/json;version=v1_web",
-								Content-Type: "application/json",
+								"Content-Type": "application/json",
 							},
 						}
 					),
@@ -93,17 +93,13 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
 				const { tokens } = credentials.data;
 
 				const dataUser = await toast.promise(
-					profileApi.post(
-						"auth/login/",
-						{ email, password },
-						{
-							headers: {
-								Authorization: `Bearer ${tokens.access}`,
-								Accept: "application/json;version=v1_web",
-								Content-Type: "application/json",
-							},
-						}
-					),
+					profileApi.get("auth/profile/", {
+						headers: {
+							Authorization: `Bearer ${tokens.access}`,
+							Accept: "application/json;version=v1_web",
+							"Content-Type": "application/json",
+						},
+					}),
 					{
 						loading: "Autenticando...",
 						success: "Login bem-sucedido!",
@@ -111,7 +107,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
 					}
 				);
 
-				const { user } = dataUser.data;
+				const user  = dataUser.data;
 
 				localStorage.setItem("@user", JSON.stringify(user));
 				localStorage.setItem("@refreshToken", tokens.refresh);

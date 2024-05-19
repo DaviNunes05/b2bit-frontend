@@ -23,6 +23,8 @@ Projeto realizado no processo seletivo Frontend da B2Bit, que envolveu a criaç�
 - **Tailwind CSS:** Um framework CSS utilitário para criar designs customizáveis rapidamente. [Tailwind CSS](https://tailwindcss.com/)
 - **React Hot Toast:** Uma biblioteca para exibir notificações de toast em React. [React Hot Toast](https://react-hot-toast.com/)
 - **Axios:** Uma biblioteca para fazer requisições HTTP a partir do navegador. [Axios](https://axios-http.com/)
+- **Formik:** Uma biblioteca para criar e gerenciar formulários em React. [Formik](https://formik.org/)
+- **Yup:** Uma biblioteca para validação de esquemas JavaScript. [Yup](https://github.com/jquense/yup)
 
 ## Como Rodar o Projeto
 
