@@ -79,6 +79,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
 						{
 							headers: {
 								Accept: "application/json;version=v1_web",
+								Content-Type: "application/json",
 							},
 						}
 					),
@@ -97,8 +98,9 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
 						{ email, password },
 						{
 							headers: {
-								Accept: "application/json;version=v1_web",
 								Authorization: `Bearer ${tokens.access}`,
+								Accept: "application/json;version=v1_web",
+								Content-Type: "application/json",
 							},
 						}
 					),
