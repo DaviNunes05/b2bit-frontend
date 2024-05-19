@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# Login B2Bit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto realizado no processo seletivo Frontend da B2Bit, que envolveu a criação do layout de login especificado no Figma e atendimento aos requisitos fornecidos.
 
-Currently, two official plugins are available:
+## Funcionalidades Ativas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Login:** O usuário pode fazer login em suas contas usando credenciais válidas. Para efetuar o login de teste, utilize o JSON abaixo:
+  ```json
+  {
+      "email": "cliente@youdrive.com",
+      "password": "password"
+  }
+  ```
+- **Logout:** O usuário pode sair a qualquer momento. Caso não efetue o logout, a sessão permanece aberta e ele será redirecionado ao seu perfil ao acessar o link novamente.
 
-## Expanding the ESLint configuration
+## Desenvolvido Com
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Vite:** Um construtor de projetos web rápido e simples.
+- **React com TypeScript:** Uma biblioteca JavaScript para construir interfaces de usuário.
 
-- Configure the top-level `parserOptions` property like this:
+## Recursos Utilizados
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Tailwind CSS:** Um framework CSS utilitário para criar designs customizáveis rapidamente. [Tailwind CSS](https://tailwindcss.com/)
+- **React Hot Toast:** Uma biblioteca para exibir notificações de toast em React. [React Hot Toast](https://react-hot-toast.com/)
+- **Axios:** Uma biblioteca para fazer requisições HTTP a partir do navegador. [Axios](https://axios-http.com/)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Como Rodar o Projeto
+
+1. Execute `npm install` para instalar as dependências do projeto.
+2. Execute `npm run dev` para iniciar o servidor de desenvolvimento e visualizar o projeto no navegador.
