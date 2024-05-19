@@ -1,6 +1,7 @@
 # Login B2Bit
 
 Projeto realizado no processo seletivo Frontend da B2Bit, que envolveu a criação do layout de login especificado no Figma e atendimento aos requisitos fornecidos.
+Link de acesso: https://davinunes05.github.io/b2bit-frontend
 
 ## Funcionalidades Ativas
 
